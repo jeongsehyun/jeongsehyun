@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right,
+    rgba(248, 237, 227, 0) 50%,
+    rgba(248, 237, 227, 10) 50%
+  );
+  background-position: -0% 0;
+  background-size: 200% auto;
+  transition: all 0.3s ease-out;
+}
+.container:active {
+  transform: scale(1.05);
+}
+.container:hover {
+  background-position: -99.99% 0;
+}
+.icon {
+  margin: 7px;
+  font-size: 1.2rem;
+  color: #798777;
+}
+.text {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  vertical-align: middle;
+  color: #9b9b9b;
+  word-break: break-all;
+  word-wrap: normal;
+}
+@media (max-width: 400px) {
+  .text {
+    display: none;
+  }
+}
