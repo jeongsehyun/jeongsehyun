@@ -1,4 +1,4 @@
-import IconText from "../icon-text/icon-text";
+import IconText from "components/icon-text/icon-text";
 import styles from "./profile.module.css";
 
 function Profile() {

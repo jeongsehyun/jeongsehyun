@@ -1,5 +1,24 @@
 .container {
   flex-grow: 1;
   width: 100%;
-  background-color: thistle;
+  padding: 20px;
+  background-color: white;
+}
+.contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 2rem;
+  font-family: "Fredoka One", cursive;
+  color: #a2b29f;
+  display: none;
+  margin-bottom: 20px;
+}
+@media (max-width: 450px) {
+  .title {
+    display: flex;
+  }
 }

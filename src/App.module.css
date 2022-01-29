@@ -46,7 +46,7 @@
   flex-grow: 1;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -58,6 +58,7 @@
   display: none;
 }
 .pages {
+  position: relative;
   flex: 5;
   display: flex;
   flex-direction: column;
@@ -65,12 +66,75 @@
   align-items: flex-start;
   min-height: 100%;
 }
+.scrollIndicationBox {
+  width: 100%;
+  height: 0vmin;
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  overflow: visible;
+}
 .scrollIndication {
   width: 100%;
-  height: 100px;
-  position: sticky;
-  bottom: 0;
-  left: 0;
-  background-color: white;
-  border-width: 2px solid;
+  height: 15vmin;
+  position: absolute;
+  top: -15vmin;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-end;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  padding-bottom: 20px;
+}
+.downIcon {
+  font-size: 4vmin;
+  color: #9b9b9b;
+  opacity: 0.5;
+  animation: bounce-down 0.8s infinite linear;
+}
+@keyframes bounce-down {
+  0% {
+    margin-bottom: 0;
+  }
+  50% {
+    margin-bottom: -10px;
+  }
+  100% {
+    margin-bottom: 0;
+  }
+}
+.scrollTopButton {
+  width: 5vmin;
+  height: 5vmin;
+  position: absolute;
+  bottom: 5vmin;
+  right: 5vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #bdd2b6;
+  box-shadow: 1px 6px 15px -2px rgba(189, 210, 182, 0.7);
+  cursor: pointer;
+}
+.topIcon {
+  line-height: 5vmin;
+  font-size: 3vmin;
+  color: white;
+  animation: bounce-up 0.8s infinite linear;
+}
+@keyframes bounce-up {
+  0% {
+    margin-bottom: 0;
+  }
+  50% {
+    margin-bottom: 5px;
+  }
+  100% {
+    margin-bottom: 0;
+  }
 }

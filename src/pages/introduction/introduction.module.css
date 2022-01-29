@@ -1,0 +1,43 @@
+.subTitleBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lottieAnimation {
+  width: 30%;
+  aspect-ratio: 1/1;
+}
+.subTitle {
+  color: #464646;
+  letter-spacing: -0.5px;
+}
+.contents {
+  margin: 50px 10px 30px 10px;
+  padding: 20px;
+  background-color: #f8ede3;
+  border-radius: 15px;
+}
+.contents > p {
+  line-height: 1.5rem;
+}
+.tmiBox {
+  width: 100%;
+  margin: 0 10px;
+  padding: 20px;
+  list-style: disc;
+  list-style-position: inside;
+}
+.tmi {
+  width: fit-content;
+  padding: 2px 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #9b9b9b;
+  color: white;
+  font-family: "Fredoka One", cursive;
+}
+.tmiBox > li {
+  line-height: 1.7rem;
+  color: #9b9b9b;
+}
