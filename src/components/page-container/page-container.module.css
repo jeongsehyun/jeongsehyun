@@ -13,6 +13,7 @@
 .title {
   font-size: 2rem;
   font-family: "Fredoka One", cursive;
+  font-weight: 500;
   color: #a2b29f;
   display: none;
   margin-bottom: 20px;

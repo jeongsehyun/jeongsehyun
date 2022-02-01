@@ -5,7 +5,7 @@ import Introduction from "pages/introduction/introduction";
 import Skills from "pages/skills/skills";
 import WorkExperience from "pages/work-experience/work-experience";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faGithub, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
   faPhone,
   faEnvelope,
@@ -23,18 +23,20 @@ import Navigation from "./components/navigation/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 library.add(
+  // solid icon
   faPhone,
   faEnvelope,
   faHouseUser,
   faSmile,
   faSmileWink,
-  faGithub,
   faTools,
   faBuilding,
   faLaptopCode,
   faGraduationCap,
   faChevronDown,
-  faChevronUp
+  faChevronUp,
+  // brand icon
+  faGithub
 );
 
 type PageName =
@@ -100,9 +102,9 @@ function App() {
           <Profile />
           <section id="pageSection" className={styles.pages}>
             <Navigation selectedPage={selectedPage} onClick={selectPage} />
-            <Introduction />
-            {/* <Skills />
-            <WorkExperience /> */}
+            {selectedPage === "Introduction" && <Introduction />}
+            {selectedPage === "Skills" && <Skills />}
+            {/* <WorkExperience /> */}
             {downButtonVisible && (
               <div className={styles.scrollIndicationBox}>
                 <div className={styles.scrollIndication}>

@@ -1,0 +1,40 @@
+.category {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px;
+}
+.categoryTitle {
+  font-size: 1.2rem;
+  font-family: "Fredoka One", cursive;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #bdd2b6;
+  border-bottom: 2px solid #bdd2b6;
+}
+.skillsBox {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(20%, auto));
+  grid-template-rows: repeat(auto-fill, minmax(15vmin, auto));
+  gap: 2.5vmin 2vmin;
+}
+.iconBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  width: 13vmin;
+  aspect-ratio: 1/1;
+  color: #9b9b9b;
+}
+.skillTitle {
+  font-size: 2.5vmin;
+  text-align: center;
+  vertical-align: middle;
+  color: #9b9b9b;
+}
