@@ -88,6 +88,7 @@
     rgba(255, 255, 255, 1) 100%
   );
   padding-bottom: 20px;
+  pointer-events: none;
 }
 .downIcon {
   font-size: 4vmin;
@@ -119,6 +120,7 @@
   background-color: #bdd2b6;
   box-shadow: 1px 6px 15px -2px rgba(189, 210, 182, 0.7);
   cursor: pointer;
+  pointer-events: auto;
 }
 .topIcon {
   line-height: 5vmin;
