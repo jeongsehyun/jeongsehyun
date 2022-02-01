@@ -67,7 +67,7 @@ function App() {
     const containerHeight = event.currentTarget.clientHeight;
     const scrollHeight = event.currentTarget.scrollHeight;
     const scrollTop = event.currentTarget.scrollTop;
-    if (containerHeight + scrollTop >= scrollHeight)
+    if (Math.ceil(containerHeight + scrollTop) >= scrollHeight)
       setDownButtonVisible(false);
     else setDownButtonVisible(true);
   };
