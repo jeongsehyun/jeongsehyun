@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/jeongsehyun/static/css/main.8697be29.css",
+    "main.css": "/jeongsehyun/static/css/main.87f6580f.css",
     "main.js": "/jeongsehyun/static/js/main.acc5c2a8.js",
     "index.html": "/jeongsehyun/index.html",
-    "main.8697be29.css.map": "/jeongsehyun/static/css/main.8697be29.css.map",
+    "main.87f6580f.css.map": "/jeongsehyun/static/css/main.87f6580f.css.map",
     "main.acc5c2a8.js.map": "/jeongsehyun/static/js/main.acc5c2a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.8697be29.css",
+    "static/css/main.87f6580f.css",
     "static/js/main.acc5c2a8.js"
   ]
 }
