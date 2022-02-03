@@ -1,9 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./app.module.css";
-import Profile from "components/profile/profile";
-import Introduction from "pages/introduction/introduction";
-import Skills from "pages/skills/skills";
-import WorkExperience from "pages/work-experience/work-experience";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -19,8 +16,13 @@ import {
   faChevronDown,
   faChevronUp,
 } from "@fortawesome/free-solid-svg-icons";
-import Navigation from "./components/navigation/navigation";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import Profile from "components/profile/profile";
+import Navigation from "components/navigation/navigation";
+import Education from "pages/education/education";
+import Introduction from "pages/introduction/introduction";
+import Skills from "pages/skills/skills";
+import WorkExperience from "pages/work-experience/work-experience";
 
 library.add(
   // solid icon
@@ -104,7 +106,9 @@ function App() {
             <Navigation selectedPage={selectedPage} onClick={selectPage} />
             {selectedPage === "Introduction" && <Introduction />}
             {selectedPage === "Skills" && <Skills />}
-            {/* <WorkExperience /> */}
+            {selectedPage === "WorkExperience" && <WorkExperience />}
+            {selectedPage === "Education" && <Education />}
+            {/* Scroll event */}
             {downButtonVisible && (
               <div className={styles.scrollIndicationBox}>
                 <div className={styles.scrollIndication}>
