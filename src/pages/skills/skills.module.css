@@ -17,23 +17,27 @@
 .skillsBox {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(20%, auto));
-  grid-template-rows: repeat(auto-fill, minmax(15vmin, auto));
-  gap: 2.5vmin 2vmin;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 15%));
+  gap: 20px 20px;
+  justify-content: space-around;
 }
 .iconBox {
   display: flex;
+  flex-grow: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .icon {
-  width: 13vmin;
+  display: block;
+  max-width: 90px;
+  width: 100%;
   aspect-ratio: 1/1;
   color: #9b9b9b;
 }
 .skillTitle {
-  font-size: 2.5vmin;
+  padding: 5px 0;
+  font-size: 1rem;
   text-align: center;
   vertical-align: middle;
   color: #9b9b9b;
