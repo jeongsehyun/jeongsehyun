@@ -8,16 +8,17 @@
 }
 .imageBox {
   width: 100%;
+  max-width: 200px;
   padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .image {
-  width: 80%;
+  display: block;
+  width: 100%;
   aspect-ratio: 1/1;
-  border-radius: 50%;
-  background-color: darkseagreen;
+  object-fit: contain;
   line-height: 100%;
   text-align: center;
 }

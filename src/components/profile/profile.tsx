@@ -5,7 +5,11 @@ function Profile() {
   return (
     <aside className={styles.container}>
       <div className={styles.imageBox}>
-        <img className={styles.image} alt="profile image" />
+        <img
+          className={styles.image}
+          alt="profile image"
+          src={process.env.PUBLIC_URL + "/images/profile_image.png"}
+        />
       </div>
       <div className={styles.contents}>
         <IconText
