@@ -33,7 +33,7 @@ function Navigation({ selectedPage, onClick }: Props) {
         <FontAwesomeIcon className={styles.icon} icon="tools" />
         <p className={styles.category}>Skills</p>
       </button>
-      <button
+      {/* <button
         className={`${styles.categoryBox} ${
           selectedPage === "Portfolio" && styles.selectedCategoryBox
         }`}
@@ -41,7 +41,7 @@ function Navigation({ selectedPage, onClick }: Props) {
       >
         <FontAwesomeIcon className={styles.icon} icon="laptop-code" />
         <p className={styles.category}>Portfolio</p>
-      </button>
+      </button> */}
       <button
         className={`${styles.categoryBox} ${
           selectedPage === "WorkExperience" && styles.selectedCategoryBox

@@ -27,11 +27,11 @@ function Profile() {
           text="https://github.com/jeongsehyun"
           href="https://github.com/jeongsehyun"
         />
-        <IconText
+        {/* <IconText
           solidIcon="house-user"
           text="https://211129.tistory.com/"
           href="https://211129.tistory.com/"
-        />
+        /> */}
       </div>
     </aside>
   );
